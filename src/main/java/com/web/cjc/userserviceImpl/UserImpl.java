@@ -54,6 +54,14 @@ public class UserImpl implements UserService {
 		return ur.save(u);
 	}
 
+	@Override
+	public User partialUpdateData(Long uid,String uname) {
+			User u=ur.findByUid(uid);
+			u.setUname(uname);
+//			u.setUserAdhar(user.getUserAdhar());
+		return ur.save(u);
+	}
+
 
 	
 //	@Override

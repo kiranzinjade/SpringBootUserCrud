@@ -18,6 +18,8 @@ public interface UserService {
 
 	public User updateUser(User user, Long uid);
 
+	public User partialUpdateData(Long uid,String uname);
+
 //	public User saveUser(User user);
 
 }
